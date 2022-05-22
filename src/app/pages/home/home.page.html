@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+	<ion-toolbar>
+		<ion-title>
+			Search 42 profile
+		</ion-title>
+	</ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+	<ion-header collapse="condense">
+		<ion-toolbar>
+			<ion-title size="large">Search 42 profile</ion-title>
+		</ion-toolbar>
+	</ion-header>
+
+	<div id="container">
+		<ion-searchbar placeholder="Search..." animated debounce="500"></ion-searchbar>
+	</div>
+
+</ion-content>
+
+<!-- Logout Button -->
+<ion-footer>
+	<ion-toolbar>
+		<ion-button expand="block" color="primary" (click)="logout()">
+			Logout
+		<ion-icon slot="end" name="log-out"></ion-icon>
+		</ion-button>
+	</ion-toolbar>
+</ion-footer>

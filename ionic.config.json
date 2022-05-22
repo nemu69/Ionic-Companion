@@ -1,0 +1,7 @@
+{
+  "name": "ionic-companion",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
