@@ -37,11 +37,10 @@ export class LoginPage implements OnInit {
 
 	}
  
-	async login() {
-		this.platform.ready().then(async () => {
-			await this.auth.init();
-			SplashScreen.hide();
-		  });
+	login() {
+		this.auth.signIn();
+
+		this.router.navigate(['/callback']);
 	}
 
 

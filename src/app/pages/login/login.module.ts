@@ -8,6 +8,7 @@ import { LoginPageRoutingModule } from './login-routing.module';
  
 import { LoginPage } from './login.page';
 import { CoreModule } from 'src/app/core/core.module';
+import { AuthService } from 'ionic-appauth';
  
 @NgModule({
 	imports: [

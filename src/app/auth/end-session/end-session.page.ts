@@ -16,7 +16,7 @@ export class EndSessionPage implements OnInit {
 
   ngOnInit() {
     this.auth.endSessionCallback();
-    this.navCtrl.navigateRoot('landing');
+    this.navCtrl.navigateRoot('login');
   }
 
 }

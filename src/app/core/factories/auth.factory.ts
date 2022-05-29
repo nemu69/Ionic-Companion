@@ -12,9 +12,9 @@ export let authFactory = (platform: Platform, ngZone: NgZone,
     authService.authConfig = environment.auth_config;
 
     if (!platform.is('cordova')) {
-		console.log('authFactory: platform.is(capacitor)');
-        authService.authConfig.redirect_url = window.location.origin + '/auth/callback';
-        authService.authConfig.end_session_redirect_url = window.location.origin + '/auth/endsession';
+		console.log(platform.platforms());
+        authService.authConfig.redirect_url = window.location.origin + '/callback';
+        authService.authConfig.end_session_redirect_url = window.location.origin + '/endsession';
     }
 
     if (platform.is('capacitor')) {

@@ -32,7 +32,7 @@ export class AuthCallbackPage implements OnInit, OnDestroy {
     }
 
     if (action.action === AuthActions.SignInFailed) {
-      this.navCtrl.navigateRoot('landing');
+      this.navCtrl.navigateRoot('login');
     }
   }
 
